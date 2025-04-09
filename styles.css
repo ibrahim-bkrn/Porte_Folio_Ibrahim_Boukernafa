@@ -1,0 +1,323 @@
+/*pour chaque section met le code css dans un fichier a part*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F9FAFF;
+    overflow-x: hidden;
+}
+
+a {
+    all: unset;
+}
+
+button{
+    all: unset;
+}
+
+
+.titre{
+    color:#25282B;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+
+.bouleViolette{
+    width: 871.213px;
+    height: 871.213px;
+    transform: rotate(-130.444deg);
+    border-radius: 871.213px;  
+    background: rgba(218, 77, 241, 0.40);
+    filter: blur(300px);
+    position: absolute;
+    z-index: -2;
+}
+
+.soulignementViolet{
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: #7B2CBF;
+}
+
+/* Le style de mon header */
+
+header{
+    width: 722px;
+    height: 123px;
+    border: solid 3px #7B2CBF;
+    display: flex;
+    justify-content: center;
+    border-radius: 165px;
+    background: #FEF9FF;
+    margin: 0 auto;
+    margin-top: 63px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+header ul li{
+    list-style: none;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-style: normal;
+    cursor: pointer;
+    /*Faire que lorsque je scroll la taille retrecit jusqu'à une certaine taille*/
+}
+
+/* Le style de ma section main*/
+
+#presentationSection{
+    margin-top: 106px;
+    margin-left: 255px;
+    display: grid;      /* Voila mon grid !*/
+    gap: 15px;
+}
+
+#presentationSection h1{
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#presentationSection p{
+    color: var(--Gray-3, #828282);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#presentationSection > div{
+    display: flex;
+    gap: 10px;
+}
+
+#presentationSection button:nth-child(1){
+    padding: 8px 24px;
+    border-radius: 8px;
+    background: #7B2CBF;
+    color: white;
+    font-family: "roboto";
+}
+
+#presentationSection button:nth-child(2){
+    border-radius: 8px;
+    border: 2px solid #25282B;
+    padding: 8px 24px;
+    font-family: roboto;
+}
+
+/* La section Skills */
+#skillsSection{
+    margin-top: 150px ;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 80px;
+}
+
+#skillsSection > article{
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+}   
+
+#skillsSection .title{
+    margin-right: 463px;
+}
+
+#skillsSection #art1{
+    margin-right: 245px;
+}
+
+#skillsSection #art1 .soulignementViolet{
+    width: 110px;
+}
+
+#skillsSection #art2{
+    margin-right: 175px;
+}
+
+#skillsSection #art2 .soulignementViolet{
+    width: 180px;
+}
+
+#skillsSection #art3{
+    margin-right: 265px;
+}
+
+#skillsSection #art3 .soulignementViolet{
+    width: 90px;
+}
+
+#skillsSection #art4{
+    margin-right: 265px;
+}
+
+#skillsSection #art4 .soulignementViolet{
+    width: 90px;
+}
+
+#skillsSection h3{
+    font-size: 24px;
+}
+
+/* La section Project */
+
+#sectionProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 84px;
+    margin-bottom: 254px;
+}
+
+#sectionProjects section{
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+}
+
+#sectionProjects section > article{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.10);
+}
+
+#sectionProjects section > article img{
+    border-radius: 16px 0 0 16px;
+    /*box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.10);*/
+    /*border: solid 3px ;*/
+}
+
+#sectionProjects section > article img:nth-child(2){
+    border-radius: 0 16px 16px 0;
+}
+
+#sectionProjects section > article article{
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 91px 38px 90px 50px;
+}
+
+#sectionProjects section > article article h2{
+    margin-bottom: 24px;
+}
+
+#sectionProjects section > article article p{
+    color: #828282;
+    font-family: Nunito;
+    font-size: 18px;
+}
+
+#sectionProjects section > article article ul{
+    color: #828282;
+    font-family: Nunito;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.buttonProjects{
+    border-radius: 8px;
+    border: 2px solid#25282B;
+    padding: 8px 24px;
+    font-family: roboto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* La section contact */
+
+#contactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#contactSection .title{
+    margin-bottom: 84px;
+}
+
+#contactSection form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#contactSection form div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contactSection form div label{
+    color: #25282B;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#contactSection form div input{
+    width: 400px;
+    padding: 13px;
+    padding-inline: 15px;
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #FFF;
+}
+
+#contactSection form div textarea{
+    padding: 13px;
+    padding-inline: 15px;
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #FFF;
+}
+
+#contactSection form button{
+    padding: 8px 24px;
+    border-radius: 8px;
+    background: #7B2CBF;
+    color: white;
+    font-family: "roboto";
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 24px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+#contactSection > div:last-child{
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+#contactSection > div img{
+    cursor: pointer;
+}
+
