@@ -1,0 +1,100 @@
+#contactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#contactSection .title{
+    margin-bottom: 84px;
+}
+
+#contactSection #f2{
+    display: none;
+}
+
+#contactSection #f1{
+    display: flex;
+}
+
+#contactSection form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#contactSection form div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contactSection form div label{
+    color: #25282B;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#contactSection form div input{
+    width: 400px;
+    padding: 13px;
+    padding-inline: 15px;
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #FFF;
+}
+
+#contactSection form div textarea{
+    padding: 13px;
+    padding-inline: 15px;
+    border-radius: 8px;
+    border: 1px solid #E8ECF4;
+    background: #FFF;
+}
+
+#contactSection form button{
+    padding: 8px 24px;
+    border-radius: 8px;
+    background: #7B2CBF;
+    color: white;
+    font-family: "roboto";
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 24px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+#contactSection > div:last-child{
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+#contactSection > div img{
+    cursor: pointer;
+}
+
+@media (max-width: 390px) {
+    #contactSection form{
+        max-width: 400px;
+    }
+
+    #contactSection #f2{
+        display: flex;
+        margin-left: 0px;
+    }
+
+    #contactSection #f2 div input{
+        width: 300px;
+    }
+
+    #contactSection #f2 div textarea{
+        width: 300px;
+    }
+    
+    #contactSection #f1{
+        display: none;
+    }
+}

@@ -12,19 +12,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!--Les liens css : -->
+    <link rel="stylesheet" href="public/Styles/styles.css">
+    <link rel="stylesheet" href="public/Styles/presentation.css">
+    <link rel="stylesheet" href="public/Styles/skills.css">
+    <link rel="stylesheet" href="public/Styles/projects.css">
+    <link rel="stylesheet" href="public/Styles/contact.css">
     <title>Porte folio</title>
 </head>
 <body>
-    <header>
+    <header> 
         <ul>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <img src="public/github.png" alt="logo Git Hub">
+          <li class="nav-item">Skills</li>
+          <li class="nav-item">Projects</li>
+          <li class="nav-item">Contact</li>
+          <img class="github-logo" src="public/svg_logo/github-icon-1-logo-svgrepo-com.svg" alt="logo Git Hub" width="52.634" height="52.634">
         </ul>
-        <div class="bouleViolette" style="right: -400px; top: -600px;"></div>
     </header>
+    
+    <div class="bouleViolette" id="b1" style="right: -200px; top: -800px;"></div>
     <main>
         <section id="presentationSection">
             <h1>Porte folio de Ibrahim <br>Boukernafa</h1>
@@ -35,36 +41,46 @@
             </div>
         </section>
 
+        <div class="cube" style="position: absolute;">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+
         <section id="skillsSection">
             <div class="title"><h1 class="titre">Skills</h1><div class="soulignementViolet"></div></div>
             <article id="art1">
-                <div><img src="public/htmlLogo.png" alt="Logo de HTML" width="96px" height="96px"></div>
-                <div><img src="public/cssLogo.png" alt="Logo de CSS" width="96px" height="96px"></div>
-                <div><img src="public/jsLogo.png" alt="Logo de Javascript" width="96px" height="96px"></div>
-                <span><h3 class="titre">Front end</h3><div class="soulignementViolet"></div></span>
+                <div><img src="public/svg_logo/html-1.svg" alt="Logo de HTML" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/css-3.svg" alt="Logo de CSS" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/javascript-logo-svgrepo-com.svg" alt="Logo de Javascript" width="96px" height="96px"></div>
+                <span id="frontEndSpan"><h3 class="titre">Front end</h3><div class="soulignementViolet"></div></span>
             </article>
             <article id="art2">
-                <div><img src="public/pyLogo.png" alt="Logo de HTML" width="96px" height="96px"></div>
-                <div><img src="public/javaLogo.png" alt="Logo de CSS" width="96px" height="96px"></div>
-                <div><img src="public/sqlLogo.png" alt="Logo de Javascript" width="96px" height="96px"></div>
-                <span><h3 class="titre">Backend et BDD</h3><div class="soulignementViolet"></div></span>
+                <div><img src="public/svg_logo/python-5.svg" alt="Logo de HTML" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/java-4.svg" alt="Logo de CSS" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/mysql-icon.svg" alt="Logo de Javascript" width="96px" height="96px"></div>
+                <span id="backendSpan"><h3 class="titre">Backend et BDD</h3><div class="soulignementViolet"></div></span>
             </article>
             <div class="bouleViolette" style="left: -800px;"></div>
             <article id="art3">
-                <div><img src="public/gitLogo.png" alt="Logo de HTML" width="96px" height="96px"></div>
-                <div><img src="public/githubLogo.png" alt="Logo de CSS" width="96px" height="96px"></div>
-                <div><img src="public/ubuntuLogo.png" alt="Logo de Javascript" width="96px" height="96px"></div>
-                <span><h3 class="titre">Devops</h3><div class="soulignementViolet"></div></span>
+                <div><img src="public/svg_logo/git-icon.svg" alt="Logo de HTML" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/github-icon-2.svg" alt="Logo de CSS" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/ubuntu-2.svg" alt="Logo de Javascript" width="96px" height="96px"></div>
+                <span id="devopsSpan"><h3 class="titre">Devops</h3><div class="soulignementViolet"></div></span>
             </article>
             <article id="art4">
-                <div><img src="public/wpLogo.png" alt="Logo de HTML" width="96px" height="96px"></div>
-                <div><img src="public/figmaLogo.png" alt="Logo de HTML" width="96px" height="96px"></div>
-                <div><img src="public/aiLogo.png" alt="Logo de HTML" width="96px" height="96px"></div>
-                <div><img src="public/psLogo.png" alt="Logo de CSS" width="96px" height="96px"></div>
-                <div><img src="public/idLogo.png" alt="Logo de Javascript" width="96px" height="96px"></div>
-                <span><h3 class="titre">Design</h3><div class="soulignementViolet"></div></span>
+                <div><img src="public/svg_logo/wordpress-icon-1.svg" alt="Logo de HTML" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/figma-icon.svg" alt="Logo de HTML" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/adobe-illustrator-cc-3.svg" alt="Logo de HTML" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/adobe-photoshop-2.svg" alt="Logo de CSS" width="96px" height="96px"></div>
+                <div><img src="public/svg_logo/adobe-indesign-cc-icon.svg" alt="Logo de Javascript" width="96px" height="96px"></div>
+                <span id="designSpan"><h3 class="titre">Design</h3><div class="soulignementViolet"></div></span>
             </article>
         </section>
+        
 
         <section id="sectionProjects">
             <div class="title"><h1 class="titre">Projects</h1><div class="soulignementViolet"></div></div>
@@ -121,7 +137,7 @@
 
         <section id="contactSection">
             <div class="title"><h1 class="titre">Contact</h1><div class="soulignementViolet"></div></div>
-            <form>
+            <form id="f1">
                 <div>
                     <label for="name">Nom :</label>
                     <input type="text" id="name" name="name" required>
@@ -139,6 +155,25 @@
               
                 <button type="submit">Send</button>
               </form>
+
+              <form id="f2">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+              
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+              
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" cols="10" rows="5" required></textarea>
+                </div>
+              
+                <button type="submit">Send</button>
+              </form>
               <div>
                 <img src="public/Linkedin.svg" alt="logo Linkedin">
                 <img src="public/mail.svg" alt="Logo instagram">
@@ -149,5 +184,43 @@
     <footer>
         <img src="public/vectorDeFin.svg" alt="">
     </footer>
+    <script>
+        const header = document.querySelector('header');
+        const navItems = document.querySelectorAll('.nav-item');
+        const githubLogo = document.querySelector('.github-logo');
+      
+        const maxWidth = 722;
+        const minWidth = 440;
+        const maxHeight = 123;
+        const minHeight = 60;
+      
+        const maxFontSize = 36;
+        const minFontSize = 18;
+      
+        const maxLogoSize = 52;
+        const minLogoSize = 26;
+      
+        window.addEventListener('scroll', () => {
+          const scrollY = window.scrollY;
+      
+          // Taille du header
+          const newWidth = Math.max(minWidth, maxWidth - scrollY * 0.5);
+          const newHeight = Math.max(minHeight, maxHeight - scrollY * 0.2);
+          header.style.width = newWidth + 'px';
+          header.style.height = newHeight + 'px';
+      
+          // Taille des textes
+          const newFontSize = Math.max(minFontSize, maxFontSize - scrollY * 0.1);
+          navItems.forEach(item => {
+            item.style.fontSize = newFontSize + 'px';
+          });
+      
+          // Taille du logo GitHub
+          const newLogoSize = Math.max(minLogoSize, maxLogoSize - scrollY * 0.1);
+          githubLogo.style.width = newLogoSize + 'px';
+          githubLogo.style.height = newLogoSize + 'px';
+        });
+      </script>
+      
 </body>
 </html>

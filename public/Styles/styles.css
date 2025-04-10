@@ -1,0 +1,244 @@
+/*pour chaque section met le code css dans un fichier a part*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F9FAFF;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a{
+    all: unset;
+}
+
+button{
+    all: unset;
+}
+
+.titre{
+    color:#25282B;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+
+.bouleViolette{
+    width: 871.213px;
+    height: 871.213px;
+    transform: rotate(-130.444deg);
+    border-radius: 871.213px;  
+    background: rgba(218, 77, 241, 0.40);
+    filter: blur(300px);
+    position: absolute;
+    z-index: -2;
+}
+
+.soulignementViolet{
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: #7B2CBF;
+}
+
+/* --------------------------------------- Style du HEADER ------------------------------------------- */
+header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 123px;
+    border: solid 3px #7B2CBF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 165px;
+    background: #FEF9FF;
+    z-index: 1000;
+    transition: width 0.3s, height 0.3s;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    list-style: none;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.nav-item {
+    font-size: 36px;
+    transition: font-size 0.3s;
+}
+
+.github-logo {
+    width: 52px;
+    height: 52px;
+    transition: width 0.3s, height 0.3s;
+}
+
+/* ------------------------------- Animation de mon cube sur toute la page -------------------------- */
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: absolute; /* Position absolue pour pouvoir déplacer le cube partout */
+    right: 250px;
+    bottom: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 14s infinite linear, moveCube 20s infinite alternate; /* Ajout de l'animation de mouvement */
+}
+
+.cube div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+}
+
+.cube .front  { transform: rotateY(  0deg) translateZ(50px); }
+.cube .back   { transform: rotateY(180deg) translateZ(50px); }
+.cube .left   { transform: rotateY(-90deg) translateZ(50px); }
+.cube .right  { transform: rotateY( 90deg) translateZ(50px); }
+.cube .top    { transform: rotateX( 90deg) translateZ(50px); }
+.cube .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+@keyframes moveCube {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    10% {
+        top: 80%;
+        left: 10%;
+    }
+    20% {
+        top: 20%;
+        left: 50%;
+    }
+    30% {
+        top: 60%;
+        left: 90%;
+    }
+    40% {
+        top: 40%;
+        left: 30%;
+    }
+    50% {
+        top: 80%;
+        left: 70%;
+    }
+    60% {
+        top: 30%;
+        left: 90%;
+    }
+    70% {
+        top: 10%;
+        left: 60%;
+    }
+    80% {
+        top: 70%;
+        left: 10%;
+    }
+    90% {
+        top: 90%;
+        left: 40%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+/* ------------------------------- Effet de vague sur les catégories de skills -------------------------- */
+
+#frontEndSpan:hover .soulignementViolet,
+#backendSpan:hover .soulignementViolet,
+#devopsSpan:hover .soulignementViolet,
+#designSpan:hover .soulignementViolet {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    animation: waveEffect 0.5s ease-out forwards;
+}
+
+@keyframes waveEffect {
+    0% {
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+    50% {
+        transform: scaleX(1.2);
+        transform-origin: bottom left;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+
+@media (max-width: 390px) {
+    header{
+        position: relative;
+        width: 311px;
+        height: 53px; 
+        /*display: none;*/
+    }
+
+    .bouleViolette{
+        display: none;
+    }
+
+    header ul{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    header ul li {
+        font-size: 16px;
+    }
+
+    .github-logo{
+        width: 26px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    footer img{
+        width: 100%;
+    }
+
+}

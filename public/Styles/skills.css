@@ -1,0 +1,95 @@
+#skillsSection{
+    margin-top: 150px ;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 80px;
+}
+
+#skillsSection > article{
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap-reverse;
+    gap: 48px;
+}   
+
+#skillsSection .title{
+    margin-right: 463px;
+}
+
+#skillsSection #art1{
+    margin-right: 245px;
+}
+
+#skillsSection #art1 .soulignementViolet{
+    width: 110px;
+}
+
+#skillsSection #art2{
+    margin-right: 175px;
+}
+
+#skillsSection #art2 .soulignementViolet{
+    width: 180px;
+}
+
+#skillsSection #art3{
+    margin-right: 265px;
+}
+
+#skillsSection #art3 .soulignementViolet{
+    width: 90px;
+}
+
+#skillsSection #art4{
+    margin-right: 265px;
+}
+
+#skillsSection #art4 .soulignementViolet{
+    width: 90px;
+}
+
+#skillsSection h3{
+    font-size: 24px;
+}
+
+
+@media (max-width: 390px) {
+
+    #skillsSection > article{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    #skillsSection > article > div img{
+        width: 65px;
+        height: 65px;
+    }
+
+    #skillsSection .title {
+        margin-right: 130px;
+    }
+
+    #skillsSection #art1 {
+        margin-right: 45px;
+    }
+
+    #skillsSection #art2 {
+        margin-right: 45px;
+    }
+
+    #skillsSection #art3 {
+        margin-right: 45px;
+    }
+
+    #skillsSection #art4 {
+        margin-right: 45px;
+    }
+
+    #skillsSection > article span{
+        display: none;
+    }
+}

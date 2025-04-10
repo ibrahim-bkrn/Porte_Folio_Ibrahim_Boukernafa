@@ -1,0 +1,51 @@
+#presentationSection{
+    margin-top: 256px;
+    margin-left: 255px;
+    display: grid;      /* Voila mon grid !*/
+    gap: 15px;
+}
+
+#presentationSection h1{
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#presentationSection p{
+    color: var(--Gray-3, #828282);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#presentationSection > div{
+    display: flex;
+    gap: 10px;
+}
+
+#presentationSection button:nth-child(1){
+    padding: 8px 24px;
+    border-radius: 8px;
+    background: #7B2CBF;
+    color: white;
+    font-family: "roboto";
+}
+
+#presentationSection button:nth-child(2){
+    border-radius: 8px;
+    border: 2px solid #25282B;
+    padding: 8px 24px;
+    font-family: roboto;
+}
+
+/*------------------------------------------------*/
+
+@media (max-width: 390px) {
+    #presentationSection{
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
+    
+}
