@@ -20,7 +20,7 @@ button{
 }
 
 .titre{
-    color:#25282B;
+    color:var(--grisé);
     font-family: "Playfair Display";
     font-size: 48px;
     font-style: normal;
@@ -49,7 +49,7 @@ button{
     width: 100px;
     height: 4px;
     border-radius: 2px;
-    background: #7B2CBF;
+    background: var(--violet);
 }
 
 /* --------------------------------------- Style du HEADER ------------------------------------------- */
@@ -60,7 +60,7 @@ header {
     transform: translateX(-50%);
     width: 700px;
     height: 123px;
-    border: solid 3px #7B2CBF;
+    border: solid 3px var(--violet);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ header ul li {
     width: 100px;
     height: 100px;
     background: rgba(255, 255, 255, 0.8);
-    border: 2px solid #333;
+    border: 2px solid var(--violet);
 }
 
 .cube .front  { transform: rotateY(  0deg) translateZ(50px); }

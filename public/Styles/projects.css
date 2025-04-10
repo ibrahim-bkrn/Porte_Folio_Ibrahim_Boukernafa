@@ -49,13 +49,13 @@
 }
 
 #sectionProjects section > article article p{
-    color: #828282;
+    color: var(--clrTexte);
     font-family: Nunito;
     font-size: 18px;
 }
 
 #sectionProjects section > article article ul{
-    color: #828282;
+    color: var(--clrTexte);
     font-family: Nunito;
     font-size: 18px;
     padding-left: 30px;
@@ -63,7 +63,7 @@
 
 .buttonProjects{
     border-radius: 8px;
-    border: 2px solid#25282B;
+    border: 2px solid var(--grisé);
     padding: 8px 24px;
     font-family: roboto;
     margin-top: 30px;

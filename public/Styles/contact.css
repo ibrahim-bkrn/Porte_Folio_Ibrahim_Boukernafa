@@ -30,7 +30,7 @@
 }
 
 #contactSection form div label{
-    color: #25282B;
+    color: var(--grisé);
     font-family: Nunito;
     font-size: 16px;
     font-weight: 600;
@@ -56,7 +56,7 @@
 #contactSection form button{
     padding: 8px 24px;
     border-radius: 8px;
-    background: #7B2CBF;
+    background: var(--violet);
     color: white;
     font-family: "roboto";
     display: flex;

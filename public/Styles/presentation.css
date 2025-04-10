@@ -12,7 +12,7 @@
 }
 
 #presentationSection p{
-    color: var(--Gray-3, #828282);
+    color: #828282;
     font-family: Nunito;
     font-size: 24px;
     font-style: normal;
@@ -27,14 +27,14 @@
 #presentationSection button:nth-child(1){
     padding: 8px 24px;
     border-radius: 8px;
-    background: #7B2CBF;
+    background: var(--violet);
     color: white;
     font-family: "roboto";
 }
 
 #presentationSection button:nth-child(2){
     border-radius: 8px;
-    border: 2px solid #25282B;
+    border: 2px solid var(--grisé);
     padding: 8px 24px;
     font-family: roboto;
 }
@@ -47,5 +47,5 @@
         margin-top: 100px;
     }
 
-    
+
 }
