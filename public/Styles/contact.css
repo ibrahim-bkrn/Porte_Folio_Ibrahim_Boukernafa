@@ -76,6 +76,8 @@
     cursor: pointer;
 }
 
+/* ------------------------------Responsive du Header -----------------------------*/
+
 @media (max-width: 390px) {
     #contactSection form{
         max-width: 400px;

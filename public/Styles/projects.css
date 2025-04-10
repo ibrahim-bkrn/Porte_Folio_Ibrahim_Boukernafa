@@ -70,6 +70,8 @@
     cursor: pointer;
 }
 
+/* ------------------------------Responsive -----------------------------*/
+
 @media (max-width: 390px) {
     #sectionProjects section{
         width: 300px;

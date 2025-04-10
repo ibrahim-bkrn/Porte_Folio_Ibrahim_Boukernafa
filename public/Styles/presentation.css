@@ -39,7 +39,7 @@
     font-family: roboto;
 }
 
-/*------------------------------------------------*/
+/*------------------------ Responsive ------------------------*/
 
 @media (max-width: 390px) {
     #presentationSection{
